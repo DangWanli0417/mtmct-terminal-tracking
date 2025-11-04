@@ -43,4 +43,19 @@ Our system uses a hierarchical configuration structure for flexible deployment:
 DefaultConfigs.json	System-level settings	Logging, resource limits, global paths
 MainConfigs.json	Process & camera parameters	Camera URLs, model paths, tracking thresholds
 ```
-
+## 🏗️ Usage
+```
+Running the Complete System
+# Launch the main processing pipeline
+python MainProcess.py
+Individual Component Testing
+# Test frame dispatching with local videos
+python FrameDispatcher.py --video_path ./data/videos/
+# Run pedestrian detection only
+python DetectLauncher.py --input_frames ./frames/ --output_detections ./detections/
+# Extract features from detected pedestrians
+python PersonFeatureExtractorLauncher.py --detections ./detections/ --features ./features/
+# Test cross-camera tracking
+python ReIdLauncher.py --features ./features/ --output_tracks ./tracks/Deployment
+# Create executable package
+pyinstaller --onefile MainProcess.py
