@@ -36,7 +36,11 @@ pip install -r requirements.txt
 - **scr/ReIdLauncher.py**  Multi-camera tracker	  Single & cross-camera tracking
 - **scr/QueryFrameDispatcher.py**  Query image handler	    Processes target person images for retrieval
 - **scr/HistoryTrackDataBaseCenter.py**  Trajectory database	 In-memory storage & cross-camera matching
-
-
-
+```
+## 🏗️ Configuration
+```bash
+Our system uses a hierarchical configuration structure for flexible deployment:
+DefaultConfigs.json	System-level settings	Logging, resource limits, global paths
+MainConfigs.json	Process & camera parameters	Camera URLs, model paths, tracking thresholds
+```
 
