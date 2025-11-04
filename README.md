@@ -79,3 +79,5 @@ Deployment
 # Create executable package
 pyinstaller --onefile MainProcess.py
 ```
+## 📝 License
+This code is released for academic research use only. Commercial use requires explicit permission from the authors.
