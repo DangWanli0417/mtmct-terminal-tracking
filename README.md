@@ -39,7 +39,7 @@ This repository（origin) contains the engineered implementation of our multi-ca
 ### Installation
 ```bash
 # Clone this repository
-git clone https://github.com/DangWanli0417/mtmct-airport-terminal.git
+git clone https://github.com/DangWanli0417/mtmct-terminal-tracking.git
 cd mtmct-airport-terminal
 
 # Install dependencies
