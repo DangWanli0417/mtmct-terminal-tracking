@@ -1,0 +1,4 @@
+Configuration Files
+File	Purpose	Key Parameters
+DefaultConfigs.json	System-level settings	Logging, resource limits, global paths
+MainConfigs.json	Process & camera parameters	Camera URLs, model paths, tracking thresholds
