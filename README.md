@@ -21,8 +21,10 @@
 ### Installation
 ```bash
 # Clone this repository
-git clone https://github.com/DangWanli0417/MTMCT-Airport-Terminal.git
-cd MTMCT-Airport-Terminal
+git clone https://github.com/DangWanli0417/mtmct-airport-terminal.git
+cd mtmct-airport-terminal
 
 # Install dependencies
 pip install -r requirements.txt
+### System Architecture
+- **scr/MainProcess**  Main orchestrator
