@@ -26,5 +26,7 @@ cd mtmct-airport-terminal
 
 # Install dependencies
 pip install -r requirements.txt
+
 ### System Architecture
-- **scr/MainProcess**  Main orchestrator
+- **scr/MainProcess.py**  Main orchestrator  Multi-process scheduling, camera task distribution
+- **scr/FrameDispatcher.py**  Video frame distributor	  Handles local video files for testing
