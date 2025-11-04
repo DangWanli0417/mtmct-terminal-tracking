@@ -26,23 +26,17 @@ cd mtmct-airport-terminal
 
 # Install dependencies
 pip install -r requirements.txt
-
-## 🏗️ System Architecture 
+```
+## 🏗️ System Architecture
+```bash
 - **scr/MainProcess.py**  Main orchestrator  Multi-process scheduling, camera task distribution
 - **scr/FrameDispatcher.py**  Video frame distributor	  Handles local video files for testing
+- **scr/DetectLauncher.py**  Pedestrian detector	  Customizable detection models
+- **scr/PersonFeatureExtractorLauncher.py**  Feature extractor	  Enhanced with color autocorrelation analysis
+- **scr/ReIdLauncher.py**  Multi-camera tracker	  Single & cross-camera tracking
+- **scr/QueryFrameDispatcher.py**  Query image handler	    Processes target person images for retrieval
+- **scr/HistoryTrackDataBaseCenter.py**  Trajectory database	 In-memory storage & cross-camera matching
 
- System Architecture
-Our framework consists of the following core components:
-
-Component	Description	Key Features
-MainProcess.py	Main orchestrator	Multi-process scheduling, camera task distribution
-FrameDispatcher.py	Video frame distributor	Handles local video files for testing
-DetectLauncher.py	Pedestrian detector	Customizable detection models
-PersonFeatureExtractorLauncher.py	Feature extractor	Enhanced with color autocorrelation analysis
-ReIdLauncher.py	Multi-camera tracker	Single & cross-camera tracking
-QueryFrameDispatcher.py	Query image handler	Processes target person images for retrieval
-HistoryTrackDataBaseCenter.py	Trajectory database	In-memory storage & cross-camera matching
-# Robust Multi-Camera Tracking in Terminal Environments 👋
 
 
 
