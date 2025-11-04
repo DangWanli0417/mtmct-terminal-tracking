@@ -7,7 +7,25 @@
 > 
 > **If you use this code in your research, please consider citing our paper.**
 > *Citation format will be updated upon publication.*
+---
 
+## 🌿 Branch Overview
+
+This repository（origin) contains the engineered implementation of our multi-camera tracking system with the following branch structure:
+
+| Branch | Purpose | Key Features |
+|--------|---------|--------------|
+| **`Master`** | Main integration branch | Code consolidation and stable releases |
+| **`Dev`** | Development branch | Cross-camera tracking using full-body images |
+| **`PartialMatching`** | Feature extraction branch | Full-body image acquisition at security checkpoints and feature management for partial/full-body images |
+
+### Branch Details
+
+- **`Master`**: The primary branch for code integration, containing stable and tested versions of the complete framework.
+
+- **`Dev`**: Implements cross-camera passenger tracking based on full-body images, featuring our novel spatio-temporal-appearance fusion approach.
+
+- **`PartialMatching`**: Specialized for security checkpoint scenarios, extracting full-body images and managing feature representations for both partial (upper body) and complete full-body images.
 ---
 
 ## 🚀 Quick Start
@@ -56,6 +74,8 @@ python DetectLauncher.py --input_frames ./frames/ --output_detections ./detectio
 # Extract features from detected pedestrians
 python PersonFeatureExtractorLauncher.py --detections ./detections/ --features ./features/
 # Test cross-camera tracking
-python ReIdLauncher.py --features ./features/ --output_tracks ./tracks/Deployment
+python ReIdLauncher.py --features ./features/ --output_tracks ./tracks/
+Deployment
 # Create executable package
 pyinstaller --onefile MainProcess.py
+```
