@@ -1,5 +1,0 @@
-Run pedestrian detection only
-python DetectLauncher.py --input_frames ./frames/ --output_detections ./detections/
-
-Extract features from detected pedestrians
-python PersonFeatureExtractorLauncher.py --detections ./detections/ --features ./features/
