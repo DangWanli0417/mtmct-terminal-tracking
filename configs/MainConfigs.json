@@ -1,0 +1,11 @@
+{
+    "cameraId2Address" :{},
+    "detectionProcessNumber": 2,
+    "featureExtractorProcessNumber": 1,
+    "reidProcessNumber": 2,
+    "cudaNumber": 1,
+    "detectionBatchSize": 8,
+    "featureExtractorBatchSize": 32,
+    "detectionPinnedDevice": false,
+    "featureExtractorPinnedDevice": false
+}
